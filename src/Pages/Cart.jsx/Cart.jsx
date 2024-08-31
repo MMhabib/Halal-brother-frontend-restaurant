@@ -47,7 +47,7 @@ export default function Cart() {
       try {
         const response = await axios.get(`https://halal-brother-server.vercel.app/api/carts/${userID}`);
         setCartData(response.data);
-        setLoading(false); // Set loading to false after data is fetched
+        setLoading(false); // Set loading to false after data is  fetched
       } catch (err) {
         setError(err.message);
         setLoading(false); // Set loading to false on error
